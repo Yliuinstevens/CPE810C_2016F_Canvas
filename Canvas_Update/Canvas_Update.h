@@ -5,11 +5,13 @@
 #include <curl/curl.h>
 #include <Canvas_Homework_Automation.h>
 
+static string updateAPI= "https://sit.instructure.com/api/v1/";
+
 //There are two APIs to update the grade
 //1.Grade or comment on a submission
 //2.Grade or comment on multiple submissions
 //we choose the first way upate the submission one by one
-static string updateAPI= "https://sit.instructure.com/api/v1/";
+
 static bool UpdateState;// the state of the uodate processing, true means the processing is successful, flase means flase
 	
 //////////////////////// the struct of gradeInfo to post; 
